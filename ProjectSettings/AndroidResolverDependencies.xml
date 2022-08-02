@@ -1,0 +1,33 @@
+<dependencies>
+  <packages>
+    <package>com.android.support:customtabs:28.+</package>
+    <package>com.android.support:recyclerview-v7:28.+</package>
+    <package>com.applovin.mediation:adcolony-adapter:4.8.0.2</package>
+    <package>com.applovin.mediation:bytedance-adapter:4.5.0.6.0</package>
+    <package>com.applovin.mediation:facebook-adapter:[6.11.0.5]</package>
+    <package>com.applovin.mediation:google-adapter:[21.1.0.0]</package>
+    <package>com.applovin.mediation:inmobi-adapter:10.0.8.1</package>
+    <package>com.applovin.mediation:ironsource-adapter:7.2.3.1.0</package>
+    <package>com.applovin.mediation:tapjoy-adapter:12.10.0.1</package>
+    <package>com.applovin.mediation:vungle-adapter:6.11.0.2</package>
+    <package>com.applovin:applovin-sdk:11.3.2</package>
+    <package>com.google.android.exoplayer:exoplayer:2.13.3</package>
+    <package>com.squareup.picasso:picasso:2.71828</package>
+  </packages>
+  <files />
+  <settings>
+    <setting name="androidAbis" value="armeabi-v7a" />
+    <setting name="bundleId" value="com.DefaultCompany.SPS02" />
+    <setting name="explodeAars" value="True" />
+    <setting name="gradleBuildEnabled" value="True" />
+    <setting name="gradlePropertiesTemplateEnabled" value="True" />
+    <setting name="gradleTemplateEnabled" value="True" />
+    <setting name="installAndroidPackages" value="True" />
+    <setting name="localMavenRepoDir" value="Assets/GeneratedLocalRepo" />
+    <setting name="packageDir" value="Assets/Plugins/Android" />
+    <setting name="patchAndroidManifest" value="True" />
+    <setting name="patchMainTemplateGradle" value="True" />
+    <setting name="projectExportEnabled" value="False" />
+    <setting name="useJetifier" value="False" />
+  </settings>
+</dependencies>
