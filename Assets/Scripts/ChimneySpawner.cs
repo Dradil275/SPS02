@@ -48,7 +48,8 @@ public class ChimneySpawner : MonoBehaviour
         float XcloserToPlayer = 14;
         int randomChimny = Random.Range(0, 5);
         float thisChimnyY = chimnys[randomChimny].transform.position.y;
-        Instantiate(chimnys[randomChimny], transform.position + new Vector3(randomX - XcloserToPlayer, thisChimnyY , 10), transform.rotation);
+        GameObject chimny  = Instantiate(chimnys[randomChimny], transform.position + new Vector3(randomX - XcloserToPlayer, 0 , 10), transform.rotation);
+        chimny.transform.position = new Vector3(chimny.transform.position.x, thisChimnyY, chimny.transform.position.z);
         
     }
 

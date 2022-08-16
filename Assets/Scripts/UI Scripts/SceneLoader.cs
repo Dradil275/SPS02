@@ -28,8 +28,8 @@ public class SceneLoader : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        audioSource = GameObject.FindGameObjectWithTag("Audio Source").GetComponent<AudioSource>();
-        theScore.GetComponent<Text>().text = GameObject.Find("Score Text").GetComponent<Text>().text;
+        //audioSource = GameObject.FindGameObjectWithTag("Audio Source").GetComponent<AudioSource>();
+      //  theScore.GetComponent<Text>().text = GameObject.Find("Score Text").GetComponent<Text>().text;
 
         if (Input.GetKeyDown(KeyCode.F))
         {
@@ -170,6 +170,10 @@ public class SceneLoader : MonoBehaviour
         pauseButton.SetActive(false);
         pausePanel.SetActive(true);
         Time.timeScale = 0;
+ 
+
+        
+
     }    
 
     public void ResumeGame()

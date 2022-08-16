@@ -35,7 +35,7 @@ public class Shop : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        //TenjinConnect();
 
         SceneLoader.LoadGameSave();
         
@@ -139,14 +139,25 @@ public class Shop : MonoBehaviour
         sleighPanel.SetActive(false);
     }
 
-   
-   
 
+    public void TenjinConnect()
+    {
+        BaseTenjin instance = Tenjin.getInstance("CRQI2QZDASGH1YASSFAFXAIXTXDHCV5X");
+       
+        // Sends install/open event to Tenjin
+        instance.Connect();
+    }
 
+    void OnApplicationPause(bool pauseStatus)
+    {
+        if (!pauseStatus)
+        {
+            TenjinConnect();
+        }
+    }
 
-
-    // get functions
-    public static int GetBagSize()
+        // get functions
+        public static int GetBagSize()
     {
         return bagSize;
     }

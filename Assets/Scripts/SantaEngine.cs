@@ -46,7 +46,7 @@ public class SantaEngine : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        TenjinIntegration.Scripts.TenjinMono.SendTenjinEvent("test02.08","0");
+        //TenjinIntegration.Scripts.TenjinMono.SendTenjinEvent("test02.08","0");
 
         isPresentPastNetzRange = false;
 
@@ -56,6 +56,7 @@ public class SantaEngine : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
 
 
+    
         //Partilces
 
 
@@ -128,10 +129,6 @@ public class SantaEngine : MonoBehaviour
 
         }
 
-        if(presentCount > 3)
-        {
-            Tenjin.getInstance("CRQI2QZDASGH1YASSFAFXAIXTXDHCV5X").SendEvent("Test from build");
-        }
 
         float y = Input.GetAxis("Vertical");
         transform.Translate(0, y / 10, 0);
